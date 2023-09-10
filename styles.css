@@ -1,0 +1,287 @@
+body {
+    background-color: #26538e;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+header {
+    background: url(img/fondo.jpg);
+    height: 100vh;
+    background-size: cover;
+}
+
+
+
+.contenedor {
+    max-width: 1280px;
+    width: 90%;
+    margin: auto;
+}
+
+/* Menú de navegación */
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.lista {
+    display: flex;
+}
+
+.lista a {
+    text-decoration: none;
+    color: white;
+}
+
+.marca {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-web {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    border-radius: 50px;
+}
+
+li {
+    list-style: none;
+    margin-right: 25px;
+    font-size: 18px;
+}
+
+.menu-icon {
+    display: none;
+}
+
+
+
+
+/* Presentacion */
+
+.titular {
+    text-align: left;
+    margin-top: 200px;
+}
+
+h1 {
+    font-size: 60px;
+    margin: 0;
+}
+
+h3 {
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+.ver-proyectos {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    background-color: #5cb8ff;
+    padding: 20px 30px;
+    border-radius: 25px;
+}
+
+.redes {
+    display: flex;
+    margin-top: 50px;
+}
+
+.redes img {
+    margin-right: 20px;
+}
+
+
+
+
+/* Seccion sobre mi */
+
+.titulo {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contenedor-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#foto_perfil {
+    width: 350px;
+    height: 450px;
+    border-radius: 25px;
+}
+
+.contenedor-parrafo {
+    width: 40%;
+}
+
+.contenedor-parrafo p {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.descargar-cv {
+    display: inline-block;
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+    padding: 10px;
+    border: 2px solid blue;
+    border-radius: 10px;
+}
+
+.descargar-cv:hover {
+    background-color: #26538e;
+    color: white;
+}
+
+.descargar-cv a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/* Tecnologias */
+
+#tecnologias {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.contenedor-tecnologias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.tecnologia {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    padding: 10px;
+    color: black;
+    background: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.informacion-adicional {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: top 0.25s ease-in-out;
+}
+
+.tecnologia:hover .informacion-adicional {
+    top: 0;
+    opacity: 0.7;
+}
+
+.titulo-tecnologia {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.tecnologia h4 {
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.tecnologia img {
+    padding-bottom: 20px;
+}
+
+
+
+
+/* Responsive */
+
+@media (max-width: 480px) {
+    
+    header {
+        height: 60vh;
+    }
+
+    nav {
+        position: absolute;
+        top: 80px;
+        left: 0px;
+        background: #5cb8ff;
+        width: 100%;
+        display: none;
+    }
+
+    nav .lista {
+        flex-direction: column;
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+        width: 50px;
+    }
+
+    .titular {
+        margin-top: 54px;
+        text-align: center;
+    }
+
+    .redes {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 19px;
+    }
+
+    .contenedor-info {
+        flex-direction: column;
+    }
+
+    .contenedor-parrafo {
+        width: 80%;
+        
+    }
+
+    .descargar-cv {
+        width: 90%;
+        text-align: center;
+    }
+    
+
+
+}

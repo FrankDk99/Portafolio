@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Estilos para los contenedores */
+        .contenedor {
+            width: 200px;
+            height: 200px;
+            background-color: #f0f0f0;
+            margin: 20px;
+            display: inline-block;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Estilos para la información adicional */
+        .informacion-adicional {
+            position: absolute;
+            top: -100%; /* Inicialmente oculto arriba */
+            left: 0;
+            width: 100%;
+            height: 100%;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            transition: top 0.3s ease-in-out; /* Transición suave */
+        }
+
+        /* Estilos para mostrar la información adicional cuando se pasa el ratón por encima */
+        .contenedor:hover .informacion-adicional {
+            top: 0; /* Mostrar desplazándose desde arriba hacia abajo */
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <p>Contenedor 1</p>
+        <div class="informacion-adicional">
+            <p>Información adicional para el Contenedor 1</p>
+        </div>
+    </div>
+
+    <div class="contenedor">
+        <p>Contenedor 2</p>
+        <div class="informacion-adicional">
+            <p>Información adicional para el Contenedor 2</p>
+        </div>
+    </div>
+
+    <!-- Agrega más contenedores si es necesario -->
+
+</body>
+</html>
