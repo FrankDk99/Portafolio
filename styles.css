@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background: url(img/fondo.jpg);
+    background: url(assets/img/fondo.jpg);
     height: 100vh;
     background-size: cover;
 }
@@ -20,6 +20,7 @@ header {
 }
 
 /* Menú de navegación */
+
 
 .menu {
     display: flex;
@@ -59,7 +60,6 @@ li {
 .menu-icon {
     display: none;
 }
-
 
 
 
@@ -240,9 +240,10 @@ h3 {
         background: #5cb8ff;
         width: 100%;
         display: none;
+        
     }
 
-    nav .lista {
+    .lista {
         flex-direction: column;
         display: flex;
     }
