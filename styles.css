@@ -116,9 +116,9 @@ h3 {
 }
 
 #foto_perfil {
-    width: 350px;
-    height: 450px;
-    border-radius: 25px;
+    width: 380px;
+    height: 380px;
+    border-radius: 100%;
 }
 
 .contenedor-parrafo {
@@ -134,19 +134,22 @@ h3 {
     display: inline-block;
     margin-top: 20px;
     font-family: 'Montserrat', sans-serif;
-    background-color: white;
+    background-color: #5cb8ff;
     padding: 10px;
-    border: 2px solid blue;
+    border: 2px solid white;
     border-radius: 10px;
 }
 
 .descargar-cv:hover {
-    background-color: #26538e;
-    color: white;
+    background-color: white;
 }
 
 .descargar-cv a {
     text-decoration: none;
+    color: white;
+}
+
+.descargar-cv a:hover {
     color: black;
 }
 
@@ -227,7 +230,7 @@ h3 {
 @media (max-width: 480px) {
     
     header {
-        height: 60vh;
+        height: 45vh;
     }
 
     nav {
@@ -268,18 +271,28 @@ h3 {
         font-size: 19px;
     }
 
+    #foto_perfil {
+        width: 280px;
+        height: 280px;
+    }
+
     .contenedor-info {
         flex-direction: column;
     }
 
     .contenedor-parrafo {
         width: 80%;
-        
+        margin-top: 20px;
     }
 
     .descargar-cv {
         width: 90%;
         text-align: center;
+    }
+
+    .tecnologia {
+        width: 40%;
+        height: 180px;
     }
     
 
