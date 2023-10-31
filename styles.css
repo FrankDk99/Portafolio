@@ -183,17 +183,22 @@ h3 {
 
 #tecnologias {
     padding-top: 50px;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
 }
 
 .contenedor-tecnologias {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    border-radius: 25px;
 }
 
 .tecnologia {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    /* display: flex;
     flex-direction: column;
     width: 40%;
     height: 250px;
@@ -205,10 +210,10 @@ h3 {
     align-items: center;
     justify-content: center;
     position: relative;
-    overflow: hidden;
+    overflow: hidden; */
 }
 
-.informacion-adicional {
+/* .informacion-adicional {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -224,28 +229,25 @@ h3 {
     justify-content: center;
     opacity: 0;
     transition: top 0.25s ease-in-out;
-}
+} */
 
-.tecnologia:hover .informacion-adicional {
+/* .tecnologia:hover .informacion-adicional {
     top: 0;
     opacity: 0.7;
+} */
+
+.tecnologia h4 {
+    text-align: center;
 }
 
 .titulo-tecnologia {
     text-align: center;
     font-size: 40px;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.tecnologia h4 {
-    font-size: 25px;
-    font-family: 'Montserrat', sans-serif;
 }
 
 .tecnologia img {
-    padding-bottom: 20px;
+    width: 50%;
 }
-
 
 
 
